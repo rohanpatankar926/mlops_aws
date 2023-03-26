@@ -15,3 +15,13 @@ aws configure list
 cat ~/.aws/config
 
 https://blog.knoldus.com/how-to-create-ec2-instance-using-python3-with-boto3/
+
+
+### day2
+
+cloud watch alarm 
+1-->add and create a cloudwatch monitoring to stop instance 
+2-->goto aws console and run
+`sudo apt-get install stress`
+`stress --cpu 8` --> run stress for 8 worker nodes
+after 5 mins we can able to generate an alarm wrt cloud-watch

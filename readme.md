@@ -31,3 +31,16 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo usermod -aG docker ubuntu
 newgrp docker
+
+
+## docker commands
+docker login<br>
+docker ps --> list all the running images in background<br>
+docker ps -a --> list all the container made by the developer<br>
+docker rm container_id --> remove the running or static container<br>
+docker rm container_id -f --> forceful remove<br>
+docker run -t docker_image_name --> run the container for non server application<br>
+docker run -t -p 8000:8000 docker_image_name --->for server application<br>
+docker run -t -p 8000:8000 -d docker_image_name --> running image in the background<br>
+docker rm container_id -f --> remove the container from the docker running in backround<br>
+docker exec -it container_id bash --> for getting into the docker vm or docker terminal<br>

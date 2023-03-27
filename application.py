@@ -1,13 +1,13 @@
 from flask import Flask
 
 
-app=Flask(__name__)
+application=Flask(__name__)
 
 
-@app.route('/')
+@application.route('/')
 def index():
-    return "<h1>Hello World</h1>"
+    return "<h1>Hello world 1</h1>"
 
 
 if __name__=="__main__":
-    app.run(host="0.0.0.0",port=8000,debug=False)
+    application.run(host="0.0.0.0",port=8000,debug=False)

@@ -25,3 +25,9 @@ cloud watch alarm
 `sudo apt-get install stress`
 `stress --cpu 8` --> run stress for 8 worker nodes
 after 5 mins we can able to generate an alarm wrt cloud-watch
+
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker ubuntu
+newgrp docker

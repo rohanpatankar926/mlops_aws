@@ -6,7 +6,7 @@ application=Flask(__name__)
 
 @application.route('/')
 def index():
-    return "<h1>Hello world 1</h1>"
+    return "<h1>Hello world 2</h1>"
 
 
 if __name__=="__main__":
